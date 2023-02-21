@@ -1,0 +1,47 @@
+<!Search for and count all earthquakes that occurred with a magnitude greater  
+than 5.0 
++ Search for 2.0 to 2.5, 2.5 to 3.0, etc magnitude quakes for a one week,  
+a range of days or the whole 30 days. 
++ Find earthquakes that were near (20 km, 50 km?) of a specified location. 
++ Find clusters of earthquakes 
++ Do large (greater than 4.0 mag) occur more often at night? 
+And similar>
+
+<h1>Count of the earthquakes greater than the given magnitudes</h1>
+
+<form method="post" action="/magnitude">
+    <input type="text" name="magnitude" id="magnitude" required step="0.01"/>
+    
+    <input type="SUBMIT" />
+</form>
+
+<h1>Range of the magnitudes: </h1>
+
+<form method="post" action="/magnituderan">
+    <input type="text" name="magnitude1" id="magnitude1" required step="0.01"/>
+    <input type="text" name="magnitude2" id="magnitude2" required step="0.01"/>
+
+    <input type="SUBMIT" />
+</form>
+
+<h1>clusters: </h1>
+
+<form method="post" action="/clusters">
+    <input type="text" name="distance" id="distance" required step="0.01"/>
+    
+    <input type="SUBMIT" />
+</form>
+<br>
+</br>
+<h1>time: </h1>
+
+<form method="post" action="/largest_magnitude">
+    <input type="text" name="time1" id="time1" required step="0.01"/>
+    <input type="text" name="time2" id="time2" required step="0.01"/>
+
+    <input type="SUBMIT" />
+</form>
+
+
+
+

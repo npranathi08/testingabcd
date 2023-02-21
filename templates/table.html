@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title>Display Table with JavaScript</title>
+</head>
+<body>
+	<table class="table">
+		<tr>
+			<th>Time</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>Depth</th>
+      <th>Mag</th>
+      <th>MagType</th>
+      <th>Nst</th>
+      <th>Gap</th>
+      <th>Dmin</th>
+      <th>Rms</th>
+      <th>Net</th>
+      <th>ID</th>
+      <th>Updated</th>
+      <th>Place</th>
+      <th>Type</th>
+      <th>HorizontalError</th>
+      <th>DepthError</th>
+      <th>MagError</th>
+      <th>MagNst</th>
+      <th>Status</th>
+      <th>LocationSource</th>
+      <th>MagSource</th>
+
+
+        </tr>
+        {% for row in display %}
+        <tr>
+
+
+<td style="text-align: center;">{{row[0]}}</td>
+            <td style="text-align: center;">{{row[1]}}</td>
+            <td style="text-align: center;">{{row[2]}}</td>
+            <td style="text-align: center;">{{row[3]}}</td>
+            <td style="text-align: center;">{{row[4]}}</td>
+            <td style="text-align: center;">{{row[5]}}</td>
+            <td style="text-align: center;">{{row[6]}}</td>
+            <td style="text-align: center;">{{row[7]}}</td>
+            <td style="text-align: center;">{{row[8]}}</td>
+            <td style="text-align: center;">{{row[9]}}</td>
+            <td style="text-align: center;">{{row[10]}}</td>
+            <td style="text-align: center;">{{row[11]}}</td>
+            <td style="text-align: center;">{{row[12]}}</td>
+            <td style="text-align: center;">{{row[13]}}</td>
+            <td style="text-align: center;">{{row[14]}}</td>
+            <td style="text-align: center;">{{row[15]}}</td>
+            <td style="text-align: center;">{{row[16]}}</td>
+            <td style="text-align: center;">{{row[17]}}</td>
+            <td style="text-align: center;">{{row[18]}}</td>
+            <td style="text-align: center;">{{row[19]}}</td>
+            <td style="text-align: center;">{{row[20]}}</td>
+            <td style="text-align: center;">{{row[21]}}</td>
+           </tr>
+
+            {% endfor %}
+        </table>
+            </body>
+            </html>
